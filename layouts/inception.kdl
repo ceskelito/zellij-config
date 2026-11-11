@@ -1,0 +1,26 @@
+layout {
+
+	pane_template name="inceptionvm-ssh" {
+		command "ssh"
+		args "inceptionvm"
+		close_on_exit true
+	}
+
+	// pane_template name="tab-bar" {
+	// 	size 1
+	// 	borderless true
+	// 	plugin location="tab-bar"
+	// }
+
+	tab name="inception"  hide_floating_panes=true {
+		inception-ssh
+		floating_panes {
+			inception-ssh
+			inception-ssh
+		}
+		// tab-bar
+		pane size=1 borderless=true {
+			plugin location="tab-bar"
+		}
+	}
+}
