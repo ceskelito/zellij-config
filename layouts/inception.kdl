@@ -1,6 +1,6 @@
 layout {
 
-	pane_template name="inceptionvm-ssh" {
+	pane_template name="inception-ssh" {
 		command "ssh"
 		args "inceptionvm"
 		close_on_exit true
